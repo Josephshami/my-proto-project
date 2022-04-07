@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
+body {
+    background-image: url(./imh/old-vintage-grunge-newspaper-paper-texture-background-400-204567693.jpg);
+    color: #706d6d;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Oswald', sans-serif;font-family: 'Oswald', sans-serif;
+}
+h1 {
+    font-size: 70px;
+    color: rgb(148, 141, 141, 0.6);
+    font-style: Sofia;
+}
+h3  {
+    max-width: 50%;
+}
+div> img {
+    margin-left: 5%;
+    height: 50vh;
+}
+li {
+    display: flex;
+    justify-content: space-around;
+    color: rgb(148, 141, 141, 0.7);
+    border-bottom: 2px solid rgb(148, 141, 141, 0.7);
+    border-top: 2px solid rgb(148, 141, 141, 0.7);
+    font-size: 20px;
+}
+a {
+    color: rgb(148, 141, 141, 0.7);
+    text-decoration: double;
+    ;
+}
+.top {
+    height: 30px;
+    background-color: rgb(148, 141, 141, 0.13);
+    margin-top: 20px;
+}
+ol:hover {
+  color: #f9d70b;
+}
+.bottom {
+    height: 30px;
+    background-color: rgb(148, 141, 141, 0.13);
+    margin-top: 20px;
+}
+footer {
+    width: 100%;
+    background-color: #3d0505;
+    height: 40px;
+    bottom: 1px;
+    color: rgb(148, 141, 141, 0.7);
+    position: fixed;
+
+}
+@media screen and (max-width: 500px) { 
+    body {
+        width: 100%;
+        height: 95vh;
+    
+    }
+   main {
+       display: grid;
+       grid-template-columns: repeat(2 , 50%);
+        grid-template-rows: repeat(8 , 1fr);
+        grid-template-areas: 
+        "nav nav"
+        "nav nav"
+        "first first"
+        "second third"
+        "fourth fourth"
+        "sixth sixth"
+        "seventh seventh"
+        "eighth eighth"
+        ;
+   }
+.fifth {
+    width: 100%;
+    grid-area: nav;
+}
+.first {
+    width: 100%;
+    grid-area: first;
+}
+.second {
+    width: 100%;
+    grid-area: second;
+}
+.third {
+    width: 100%;
+    grid-area: third;
+}
+.fourth {
+    width: 100%;
+    grid-area: fourth;
+}
+.sixth {
+    width: 100%;
+    grid-area: sixth;
+}
+.seventh {
+    width: 100%;
+    grid-area: seventh;
+}
+.eighth {
+    width: 100%;
+    grid-area: eighth;
+}
+
+
+
+    }

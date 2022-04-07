@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+body {
+    background-color:   rgb(29, 28, 26);
+}
+div {
+    background-image: url(../img/main-removebg-preview\ \(1\).png);
+    background-size:cover; 
+    background-repeat: no-repeat;
+   
+    height: 90vh;
+    width: 50%;
+    position: sticky;
+    left: 22%;
+    top: 20px;
+}
+a {
+    font-size: 20px;
+    position: relative;
+    top: 350px;
+    left: 414px;
+    border: 3px solid rgb(29, 28, 26);
+    border-radius: 50%;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+h1 {
+    font-size: 50px;
+    color: white;
+    position: relative;
+    text-align: center;
+    right: 46px;
+}
+a:hover {
+    opacity: 100;
+    background-image: url(../img/playing\ music.jpg);
+    background-size:cover; 
+
+}

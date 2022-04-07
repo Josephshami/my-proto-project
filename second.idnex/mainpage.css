@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  background-color:black
+}
+
+/* here comes the na
+v styling */
+
+ .topnav {
+  background-color: #f9d70b	;
+  overflow: hidden;
+    list-style: none;
+    
+    height: 95px;
+    text-shadow: 1px 2px 2px  #030303;  
+  }
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  padding: 2px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  line-height: 5;
+}
+
+.topnav-right {
+  float: right;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+#logo {
+
+  height: 100px;
+  width: 100px;
+}
+#mine {
+  height: 100px;
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+/* here starts the grid of the whole page */
+/* .container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: repeat(6 ,200px);
+} */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2 , 50%);
+  grid-row: repeat(8 ,1fr);
+  grid-template-areas: 
+  "name name"
+  "main side"
+  "main side"
+  "second any"
+  "second any"
+  "second any"
+  "footer footer"
+  "footer footer"
+  ;
+}
+.bg1 {
+  height: fit-content;
+ margin-top: 50px;
+
+}
+
+.gr1 {
+  
+  background-image: url(../img/me-removebg-preview.png);
+  background-position: center center;  
+  background-color: rgb(83, 51, 51);}
+
+  .gr0{
+    background-color: black;
+    font-family: 'Sofia', cursive;
+    font-size: 30px;
+    text-shadow: 2px 1px 1px  #f9d70b;  
+    grid-area: name;
+    /* grid-column: 1 /3;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gr2 {
+    background-color: black;
+    grid-area: main;
+    /* grid-row: 2 / 4;
+    grid-column: 1 / 2; */
+
+}
+.gr3 {
+    padding: 0 20px;
+    font-family: Sofia;
+    grid-area: side;
+}
+.gr4 {
+  grid-area: any;
+    /* grid-row: 3 / 5; */
+    padding: 0 30px;
+    font-family: Sofia;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #950101;
+    margin-top: 75px;
+
+}
+.gr5 {
+  grid-area: second;
+    /* grid-row: 4 / 6; */
+    background-color: black;
+margin-top: 200px;}
+.gr6 {
+  grid-area: any;
+  
+}
+
+.footer {
+    background-color:#f9d70b;
+    grid-area: footer;
+    /* grid-column: 1 / 3; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    height: 80px;
+    margin: 80px;
+    width: 100%;
+    margin:auto;
+    margin-bottom: 0%;
+    color: #950101;
+
+
+
+}
+h2 {
+    font-family: Sofia;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  background-color: #950101;
+  height: 50px;
+  text-shadow: 2px 2px black;
+}
+h1 {
+  margin-bottom: 50px;
+}
+
+/* animaton */
+.mickyani 
+{
+  width: 40%; 
+  height: 100px;
+  background-image: url(../img/main-removebg-preview\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: 300px 200px ;
+  animation: mickyani 9s infinite,
+    movearound 12s infinite alternate 44ms;
+  animation-direction: normal, alternate;
+  z-index: 1;
+  position: absolute;
+}
+@keyframes mickyani {
+  0% {background-position: 0 0}
+  100% {background-position: -800 0}
+}
+@keyframes movearound {
+  0% {transform: translatex(-2000px)}
+  100% {transform: translatex(620px);}
+}
